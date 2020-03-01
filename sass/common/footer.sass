@@ -1,0 +1,72 @@
+@import "vars.sass"
+@import "fonts.sass"
+
+footer
+  color: black
+  .footer
+    position: relative
+
+    .footer-img
+      position: relative
+      border: 1px solid lighten($pushCol, 25)
+      position: relative
+      margin: 0 auto 0 auto
+      border-radius: 50%
+      width: 137px
+      height: 137px
+      margin-bottom: 25px
+
+      img
+        position: relative
+        display: block
+        margin: 0 auto 0 auto
+        top: 50%
+        margin-top: -40px
+
+    &::after
+      display: block
+      position: absolute
+      content: ''
+      width: 50%
+      height: 1px
+      background-color: lighten($pushCol, 25)
+      top: 67px
+      left: -68px
+
+    &::before
+      display: block
+      position: absolute
+      content: ''
+      width: 50%
+      height: 1px
+      background-color: lighten($pushCol, 25)
+      top: 67px
+      right: -68px
+.footer_gratia
+  margin-bottom: 80px
+  position: relative
+
+  &::after
+    display: block
+    position: absolute
+    content: ''
+    width: 156px
+    height: 1px
+    background-color: lighten($pushCol, 25)
+    bottom: -60px
+    left: 50%
+    margin-left: -78px
+.footer-icons
+  padding-bottom: 200px
+  .icons-circle
+    font-size: 14px
+    color: white
+    display: inline-block
+    background-color: #e7e7e7
+    margin-right: 10px
+    width: 26px
+    height: 26px
+    border-radius: 50%
+
+    .fab
+      margin-top: 6px

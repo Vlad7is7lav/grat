@@ -1,0 +1,208 @@
+@import "fonts.sass"
+@import "vars.sass"
+
+
+#my-header
+  background-color: #151b28
+  //height: 1050px
+  padding-bottom: 200px
+  position: relative
+
+#my-header-top
+  min-height: 170px
+
+.firm
+  margin: 65px 0 0 -30px
+
+.firm-img
+  float: left
+  margin-right: 16px
+
+.firm-name
+  font-size: 24px
+  text-align: left
+  font-weight: bold
+  padding-top: 3px
+
+//Menu Style
+
+.mobileMenu
+  display: none
+  position: absolute
+  top: 20px
+  z-index: 10
+
+.mobileMenu-list
+  position: absolute
+  right: -170px
+  transition: all .1s ease-out
+
+  ul
+    margin-right: -50px
+    margin-top: 10px
+
+  li
+    list-style-type: none
+    padding: 3px 0
+    width: 150px
+
+    a
+      text-decoration: none
+      color: #fff
+      transition: all .1s ease-in
+
+      &:hover
+        color: $pushCol
+
+.showing
+  right: 0
+
+.menu
+  text-align: right
+
+  li
+    display: inline-block
+    list-style-type: none
+    padding: 70px 60px 0 0
+    max-width: 100%
+
+    &:last-child
+      padding-right: 0
+
+    a
+      text-decoration: none
+      color: #fff
+      transition: all .2s ease-in-out
+
+      &:hover
+        color: $pushCol
+
+.my-header-main
+  position: relative
+
+  .slider
+    width: 100%
+
+    .slider-wrap
+      position: relative
+      overflow: hidden
+      white-space: nowrap
+      width: auto
+      margin: auto auto
+      opacity: 0
+      transition: opacity 0.4s ease
+
+
+      .slider-items
+        position: relative
+        list-style-type: none
+        margin: 0
+        padding: 0
+        font-size: 0
+        margin-left: -1396px
+        // transition: all 1s ease
+
+        .item
+          position: relative
+          list-style-type: none
+          display: inline-block
+          padding: 0
+          box-sizing: border-box
+
+          img
+            display: block
+            margin: auto auto
+            padding: 0
+
+    .slider-pointer-left
+      position: absolute
+      left: 0
+      width: 70px
+      height: 70px
+      border:
+        bottom: 1px solid #263045
+        right: 1px solid #263045
+      transform: rotate(135deg)
+      top: 53%
+      cursor: pointer
+
+    .slider-pointer-right
+      position: absolute
+      right: 0
+      width: 70px
+      height: 70px
+      border:
+        bottom: 1px solid #263045
+        right: 1px solid #263045
+      transform: rotate(315deg)
+      top: 53%
+      cursor: pointer
+
+
+.slider-bottom
+  position: relative
+  margin-top: 120px
+
+  .slider-bottom_text
+    //border: 1px solid $pushCol
+    color: #485471
+    .text
+      text-align: center
+
+  .slider-number-block
+    position: absolute
+    bottom: -20px
+    left: -18px
+    font-size: 14px
+
+    .block
+      position: relative
+      margin-top: 65px
+      text-align: left
+      padding: 0 20px 3px 0
+      cursor: pointer
+
+      &:hover
+        &::after
+          background-color: $pushCol
+
+      &::after
+        position: absolute
+        content: ''
+        display: block
+        width: 60px
+        height: 1px
+        bottom: -4px
+        transition: background-color ease .2s
+
+    .active
+      &::after
+        background-color: $pushCol
+
+
+
+
+
+
+  .slider-bottom_text
+    margin-bottom: 10px
+    clear: both
+
+
+  .slider-button
+    position: relative
+    bottom: 0px
+    max-width: 220px
+
+
+
+    .button
+      position: absolute
+      border: 1px solid #263045
+      padding: 17px 45px
+      right: -90px
+      cursor: pointer
+
+      a
+        text-decoration: none
+        color: $pushCol

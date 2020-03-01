@@ -1,0 +1,432 @@
+//@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Extra HD */
+@media only screen and (max-width : 2560px)
+	/**/
+
+
+/* Large Devices, Full HD */
+@media only screen and (max-width : 1920px)
+	
+	.slider-pointer-left
+		margin-left: 70px
+	.slider-pointer-right
+		margin-right: 70px
+	.slider-number-block
+		margin-left: 70px
+	/**/
+
+
+/* Large Devices, Wide Screens _ 2 */
+@media only screen and (max-width : 1600px)
+	/**/
+	html
+		overflow-x: hidden
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	html
+		overflow-x: hidden
+	.my-header-main
+		.slider
+			.slider-wrap
+				width: 450px
+				.slider-items
+
+					img
+						width: 100%
+
+	.hidden
+		display: none
+
+	.firm
+	  margin: 65px 0 0 0px
+	.slider-bottom
+		margin-top: 50px
+		.slider-button
+			margin-left: -200px
+			left: 50%
+			margin-top: 60px
+
+	.perfection-block
+		margin-top: -45px
+
+	.meal
+		.container-fluid
+			.meal-block-smooth
+				padding: 30% 0 60% 0
+
+	.achieve
+		.container-fluid
+			.achieve-block-center
+				&::before
+					font-size: 200px
+					bottom: 0
+			.achieve-block
+				height: 240px
+				margin: 1% 0 10px 0
+
+				&::before
+	        font-size: 18em
+	        top: -50%
+		.col-sm-4:first-child
+			.achieve-block
+				.achieve-block_name
+					margin: -10px 0 20px 0
+
+
+
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+		html
+			overflow-x: hidden
+
+		.my-header-main
+			.slider
+				.slider-wrap
+					width: 450px
+					.slider-items
+
+						img
+							width: 100%
+
+		.slider-pointer-left
+			display: none
+
+		.slider-pointer-right
+			display: none
+
+		#my-header-top
+			min-height: 120px
+
+			.firm
+			  margin: 25px 0 0 0px
+
+		#my-page
+			position: relative
+
+			#toggleHamMenu
+				display: none
+			.mobileMenu
+				display: block
+				cursor: pointer
+				right: 25px
+
+				.hamburgerMenu
+					right: -70px
+					top: 50px
+				.inHam
+					width: 30px
+				.inHamElement
+					position: absolute
+					background-color: brown
+					width: 30px
+					height: 4px
+					border-radius: 10px
+					bottom: 10px
+
+					&::before, &::after
+						position: absolute
+						content: ''
+						background-color: brown
+						width: 30px
+						height: 4px
+						right: 0
+						border-radius: 10px
+
+					&::before
+						top: 10px
+
+					&::after
+						top: 20px
+
+			.menu
+				display: none
+
+		.my-header-main
+			.slider
+				.slider-wrap
+					width: 450px
+
+					img
+						width: 450px
+
+		.meal
+			.container-fluid
+				.meal-block-smooth
+					padding: 30% 0 60% 0 !important
+					.meal-block-smooth_text
+						margin: 150px 0 -150px 0
+						.meal-block-smooth_name
+							font-size: 24px
+							margin: auto 0 auto 0
+						.meal-block-smooth_tagline
+							font-size: 14px
+				.meal-block_name
+					font-size: 24px
+				.meal-block
+					margin: 20% 0 50px 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	html
+		overflow-x: hidden
+	.my-header-main
+		.slider
+			.slider-wrap
+				.slider-items
+					img
+						width: 300px
+
+	#my-header
+	  padding-bottom: 140px
+
+	.perfection
+		.perfection-block
+			background-size: 85%
+	.meal
+		padding-bottom: 0px
+		.container-fluid
+			.meal-block-smooth
+				height: 60%
+				padding: 180px 0 !important
+				background-size: contain
+				margin: 0 auto -30px auto
+
+
+				.meal-block-smooth_text
+					margin: 0
+					.meal-block-smooth_name
+						font-size: 26px
+						margin-top: 30px
+					.meal-block-smooth_tagline
+						display: none
+
+			.meal-block_name
+				font-size: 28px
+				margin: -25px 0 10px 0
+				&::after
+					display: none
+
+			.meal-block_tagline
+				display: none
+
+			.meal-block
+				padding: 140px 0
+				height: 300px
+				//width: 230px
+				margin: 30px auto 10% auto
+
+	.details
+		height: 440px
+
+		.details-card
+			height: 370px
+			width: 460px
+			margin: -10px auto 0 auto
+	    max-height: 180px !important
+			transform: translateY(10%)
+
+
+
+
+			.details-card_text
+				width: 260px
+				margin: 0 auto
+				padding-bottom: 0px !important
+				padding-top: 75px
+
+				&::after
+	        width: 390px
+	        height: 310px
+	        border: 1px solid #8b909d
+	        left: 50%
+	        margin-left: -195px
+	        top: 30px
+
+			.details-button
+				width: 300px
+				margin-top: -10px
+
+
+
+	.achieve
+	  .container-fluid
+
+			.achieve-block_name
+				margin: 0 !important
+				padding-top: 8%
+				font-size: 20px !important
+			.achieve-block_tagline
+	      display: none
+
+			.achieve-block-center_name
+				font-size: 20px !important
+				margin: 0 !important
+				padding-top: 8%
+
+			.achieve-block-center_tagline
+				display: none
+			.achieve-block-center
+				height: 220px
+				margin-top: 10px
+				padding-top: 30px
+				&::before
+					display: none !important
+
+			.achieve-block
+
+
+
+
+
+	.check_offers
+		  margin-bottom: 50px
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	html
+		overflow-x: hidden
+	.my-header-main
+		.slider
+			position: relative
+			.slider-wrap
+				-webkit-transform: translateX(-50%)
+				-moz-transform: translateX(-50%)
+				-ms-transform: translateX(-50%)
+				-o-transform: translateX(-50%)
+				margin-left: 50%
+
+				.slider-items
+					img
+						width: 250px
+
+	.details
+		height: 340px
+
+		.details-card
+			height: 290px
+			width: 90%
+			margin: -10px auto 0 auto
+
+
+
+
+			.details-card_text
+				width: 230px
+				margin: 0 auto
+				padding-bottom: 0px !important
+				padding-top: 30px
+
+
+				&::after
+					display: none
+			        width: 270px
+			        height: 220px
+			        border: 1px solid #8b909d
+			        left: 50%
+			        margin-left: -135px
+			        top: 30px
+
+			.details-button
+			      position: relative
+			      padding: 12px 5px
+			      font-size: 15px
+			      width: 83%
+
+	.perfection
+	  color: black
+
+	  .perfection-block
+	    //margin-top: 135px
+	    padding: 120px 0 30px 0
+	    background: url(/img/index/Gratia.png) no-repeat
+	    background-position: 50% 68%
+	    background-size: 100%
+
+	    .perfection-block_name
+	      font-size: 32px
+	      margin-bottom: 15px
+
+	.achieve
+	  padding-bottom: 80px
+
+	  .container-fluid
+	    padding-right: 0
+	    padding-left: 0
+	    margin: 0
+
+	    .achieve-block-center
+	      position: relative
+	      padding: 18% 5% 28% 5%
+	      max-height: 376px
+	      max-width: 636px
+	      background-color: #182131
+	      z-index: -3
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.slider-wrap
+		margin-left: 2420px
+
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+
+
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
