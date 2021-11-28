@@ -1,5 +1,6 @@
 # folder layout
 !layout/
+ejs/
 
 # folder node_modules
 node_modules/
@@ -10,7 +11,7 @@ build/libs/jquery
 build/libs/modernizr
 
 # folder in sass
-sass/pages/
+# sass/pages/
 
 # scripts
 build/js/scripts.min.js

@@ -8,7 +8,7 @@
 
 
 /* Large Devices, Full HD */
-@media only screen and (max-width : 1920px)
+@media only screen and (min-width : 1601px)
 	
 	.slider-pointer-left
 		margin-left: 70px
@@ -16,28 +16,49 @@
 		margin-right: 70px
 	.slider-number-block
 		margin-left: 70px
-	/**/
-
-
-/* Large Devices, Wide Screens _ 2 */
-@media only screen and (max-width : 1600px)
-	/**/
-	html
-		overflow-x: hidden
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
+	
 	html
 		overflow-x: hidden
 	.my-header-main
 		.slider
 			.slider-wrap
-				width: 450px
+				width: 700px
 				.slider-items
+					margin-left: -700px
+					li
+						width: 700px
+						img
+							width: 696px
+	/**/
 
-					img
-						width: 100%
+
+/* Large Devices, Wide Screens _ 2 */
+@media only screen and (max-width: 1600px)
+	.my-header-main
+		.slider
+			.slider-wrap
+				width: 700px 
+				.slider-items
+					margin-left: -700px 
+					.item
+						width: 700px 
+						img
+							width: 696px 
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+	.my-header-main
+		.slider
+			.slider-wrap
+				width: 510px
+				.slider-items
+					margin-left: -510px
+					li.item
+						width: 510px
+						img
+							width: 510px
 
 	.hidden
 		display: none
@@ -77,112 +98,139 @@
 				.achieve-block_name
 					margin: -10px 0 20px 0
 
-
+	#book-page
+		form
+			.row
+				.input-row-1, .input-row-2, .input-row-3
+					margin: 0 auto
+			.input-row-4, .btn
+				max-width: 638px
+				margin: 0 auto
 
 	/**/
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-		html
-			overflow-x: hidden
-
-		.my-header-main
-			.slider
-				.slider-wrap
-					width: 450px
-					.slider-items
-
-						img
-							width: 100%
-
-		.slider-pointer-left
-			display: none
-
-		.slider-pointer-right
-			display: none
-
-		#my-header-top
-			min-height: 120px
-
-			.firm
-			  margin: 25px 0 0 0px
-
-		#my-page
-			position: relative
-
-			#toggleHamMenu
-				display: none
-			.mobileMenu
-				display: block
-				cursor: pointer
-				right: 25px
-
-				.hamburgerMenu
-					right: -70px
-					top: 50px
-				.inHam
-					width: 30px
-				.inHamElement
-					position: absolute
-					background-color: brown
-					width: 30px
-					height: 4px
-					border-radius: 10px
-					bottom: 10px
-
-					&::before, &::after
-						position: absolute
-						content: ''
-						background-color: brown
-						width: 30px
-						height: 4px
-						right: 0
-						border-radius: 10px
-
-					&::before
-						top: 10px
-
-					&::after
-						top: 20px
-
-			.menu
-				display: none
-
-		.my-header-main
-			.slider
-				.slider-wrap
-					width: 450px
-
-					img
-						width: 450px
-
-		.meal
-			.container-fluid
-				.meal-block-smooth
-					padding: 30% 0 60% 0 !important
-					.meal-block-smooth_text
-						margin: 150px 0 -150px 0
-						.meal-block-smooth_name
-							font-size: 24px
-							margin: auto 0 auto 0
-						.meal-block-smooth_tagline
-							font-size: 14px
-				.meal-block_name
-					font-size: 24px
-				.meal-block
-					margin: 20% 0 50px 0
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	html
-		overflow-x: hidden
 	.my-header-main
 		.slider
 			.slider-wrap
+				-ms-touch-action:auto
+				-webkit-user-select:auto
+				-moz-user-select:auto
+				-ms-user-select:auto
+				touch-action:auto
+				user-select:auto
+				// width: 510
 				.slider-items
+					-ms-touch-action:auto
+					touch-action:auto
+					-webkit-user-select:auto
+					-moz-user-select:auto
+					-ms-user-select:auto
+					user-select:auto
+					margin-left: -510px
 					img
-						width: 300px
+						// width: 510
+
+	.slider-pointer-left
+		display: none
+
+	.slider-pointer-right
+		display: none
+
+	#my-header-top
+		min-height: 120px
+
+		.firm
+			margin: 25px 0 0 0px
+
+	#my-page, #menu-page, #book-page
+		position: relative
+
+		#toggleHamMenu
+			display: none
+		.mobileMenu
+			display: block
+			cursor: pointer
+			right: 25px
+
+			.hamburgerMenu
+				right: -70px
+				top: 50px
+			.inHam
+				width: 30px
+			.inHamElement
+				position: absolute
+				background-color: brown
+				width: 30px
+				height: 4px
+				border-radius: 10px
+				bottom: 10px
+
+				&::before, &::after
+					position: absolute
+					content: ''
+					background-color: brown
+					width: 30px
+					height: 4px
+					right: 0
+					border-radius: 10px
+
+				&::before
+					top: 10px
+
+				&::after
+					top: 20px
+		#my-header-top
+			.menu
+				display: none
+
+	.my-header-main
+		.slider
+			.slider-wrap
+				width: 510px
+
+	.meal
+		.container-fluid
+			.meal-block-smooth
+				padding: 30% 0 60% 0 !important
+				.meal-block-smooth_text
+					margin: 150px 0 -150px 0
+					.meal-block-smooth_name
+						font-size: 24px
+						margin: auto 0 auto 0
+					.meal-block-smooth_tagline
+						font-size: 14px
+			.meal-block_name
+				font-size: 24px
+			.meal-block
+				margin: 20% 0 50px 0
+	#menu-page, #book-page
+		.menu-card
+			figure
+				figcaption
+					h1
+						font-size: 1.5em
+
+	#book-page
+		form
+			.input-row-1
+				div
+					flex: 1 1 188px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.my-header-main
+		.slider
+			.slider-wrap
+				width: 350px
+				.slider-items
+					margin-left: -350px
+					li.item
+						width: 350px
+						img
+							width: 100%
 
 	#my-header
 	  padding-bottom: 140px
@@ -281,13 +329,16 @@
 					display: none !important
 
 			.achieve-block
-
-
-
-
-
 	.check_offers
 		  margin-bottom: 50px
+
+	#book-page
+		form
+			.input-row-1
+				div
+					flex: none
+				div:nth-child(3)
+					margin-left: 0px
 
 	/*Disable Animation on Mobile Devices*/
 	.animated

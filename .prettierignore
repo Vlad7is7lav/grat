@@ -1,0 +1,5 @@
+# Ignore files:
+build
+!layout
+img
+node_modules

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Gratia Cafe Book</title>
+
+  <meta name="description" content="Book">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Bootstrap v4 Grid Styles -->
+  <style></style>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+  <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+  <!-- Load CSS Compiled without JS -->
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+
+
+<body class="isHome">
+  <div id="book-page">
+    <!-- Header -->
+    <div id="my-header">
+      <nav class="mobileMenu">
+        <div class="mobileMenu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+
+        <div class="mobileMenu-list">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="/menu">Menu</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="my-header-top">
+        <div class="container">
+          <div class="row">
+
+            <!-- Firm's Emblem -->
+            <div class="col-sm-4 col-md-3 col-xs-12">
+              <div class="firm">
+                <img class="firm-img" src="img/index/Logo.png" alt="Gratia" width="32" height="32">
+                <a href="/gratia"><h2 class="firm-name">Gratia</h2></a>
+              </div>
+            </div>
+
+            <!-- Menu -->
+
+            <div class="col col-sm-12 col-md-9">
+              <ul class="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu - main part -->
+    <section class="menu">
+      <div class="my-header-main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl text-center">
+              <div class="perfection">
+                <div class="perfection-block">
+                  <div class="perfection-block_name">
+                    BOOK A TABLE
+                  </div>
+                  <div class="perfection-block_tagline">
+                    <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="needs-validation" novalidate onsubmit="return mySubmitFunction(event)">
+          <div class="row">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-xl-6">
+              <div class="input-row-1 ml-xl-auto">
+                <div class="day">
+                  <input type="number" class="form-control" id="validationCustom01" placeholder="DD" max=31 min=1
+                  oninput="this.value = this.value > 31 ? 31 : Math.abs(this.value)" required>
+                </div>
+                <div class="month-select">
+                  <select class="custom-select form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+                    <option selected disabled value="">MM</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                  </select>
+                </div>
+                <div class="year">
+                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="YYYY" max=2022 min=2021
+                  oninput="this.value = this.value > 2022 | this.value < 2021 ? 2021 : Math.abs(this.value)" required>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-xl-6">
+              <div class="input-row-1 mr-xl-auto">
+                <div class="hour">
+                  <input type="number" class="form-control" id="validationCustom01" placeholder="HOUR" max=23 min=1
+                  oninput="this.value = this.value > 23 ? 23 : Math.abs(this.value)" required> 
+                </div>
+                <div class="people">
+                  <input type="number" class="form-control" placeholder="NUMBER OF PEOPLE" max=8 min=1
+                  oninput="this.value = this.value > 8 ? 8 : Math.abs(this.value)">
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          
+
+          <div class="row">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-xl-6">
+              <div class="input-row-2 ml-xl-auto">
+                <div class="fullname">
+                  <input type="text" class="form-control left" id="validationCustomUsername" placeholder="FIRST NAME AND LAST NAME" maxlength=30 minlength=3 required>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-xl-6">
+              <div class="input-row-3 mr-xl-auto">
+                <div class="telephone">
+                  <input type="tel" class="form-control left" pattern="8[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="PHONE NUMBER 89..." size="10" required />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-xl-6">
+              <div class="input-row-2 ml-xl-auto">
+                <div>
+                  <input type="email" class="form-control left" id="exampleFormControlInput1" placeholder="E-MAIl" maxlength=30 minlength=3 required>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-xl-6">
+              <div class="input-row-3 mr-xl-auto">
+                <div class="prepare-menu">
+                  <select class="custom-select form-select form-select-lg mb-3 left" aria-label=".form-select-lg example">
+                    <option selected>PREPARE MENU</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="input-row-4">
+                <div class="message">
+                  <textarea class="form-control" rows="3" placeholder="Your message..."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-button">
+                <button class="btn btn-primary" type="submit">SEND</button>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer footer-book">
+        <div class="footer-img footer-img-book">
+          <img src="img/index/Logo_Footer.png" alt="Gratia" width="80" height="80" />
+        </div>
+      </div>
+
+      <div class="footer_gratia footer-gratia-book"> 
+        Gratia Restaurant
+      </div>
+
+      <div class="footer-icons">
+        <div class="icons-circle"><i class="fab fa-facebook-f"></i></div>
+        <div class="icons-circle"><i class="fab fa-instagram"></i></div>
+        <div class="icons-circle"><i class="fab fa-twitter"></i></div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+
+    var icon = document.querySelector(".mobileMenu-icon");
+    icon.addEventListener('click', function() {
+      document.querySelector(".mobileMenu-list").classList.toggle("showing");
+    })
+
+    function mySubmitFunction(e) {
+      e.preventDefault();
+      var form = document.querySelectorAll('.needs-validation')[0]
+      if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+    }
+    
+
+  </script>
+
+  
+
+</body>

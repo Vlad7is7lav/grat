@@ -20,20 +20,16 @@
   <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
   <!-- Load CSS Start -->
-	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
-	<script>loadCSS( "css/common/header.min.css?ver=1.0.0", false, "all" );</script>
-	<script>loadCSS( "css/common/main.min.css?ver=1.0.0", false, "all" );</script>
-  <script>loadCSS( "css/common/footer.min.css?ver=1.0.0", false, "all" );</script>
-  <script>loadCSS( "libs/font-awesome-4.7.0/css/fontawesome.min.css?ver=1.0.0", false, "all" );</script>
+  <link rel="stylesheet" href="css/style.min.css">
+
 	<!-- Load CSS End -->
 
   <!-- Load CSS Compiled without JS -->
 	<noscript>
-		<link rel="stylesheet" href="css/common/fonts.min.css">
-		<link rel="stylesheet" href="css/common/main.min.css">
-    <link rel="stylesheet" href="css/common/footer.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/fontawesome.min.css">
 	</noscript>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 
@@ -58,7 +54,7 @@
         <div class="mobileMenu-list">
           <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="/menu">Menu</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -73,7 +69,7 @@
             <div class="col-sm-4 col-md-3 col-xs-12">
               <div class="firm">
                 <img class="firm-img" src="img/index/Logo.png" alt="Gratia" width="32" height="32">
-                <h2 class="firm-name">Gratia</h2>
+                <a href="/gratia"><h2 class="firm-name">Gratia</h2></a>
               </div>
             </div>
 
@@ -82,7 +78,7 @@
             <div class="col col-sm-12 col-md-9">
               <ul class="menu">
                 <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="/menu">Menu</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
@@ -110,9 +106,9 @@
               <div class="col col-lg-8 col-xs-12">
                 <div class="slider-wrap" style="opacity: 0">
                   <ul class="slider-items">
-                    <li class="item"><img src="img/index/pic_01.png" alt="pic_01" width="696"></li>
-                    <li class="item"><img src="img/index/pic_02.png" alt="pic_02" width="696"></li>
-                    <li class="item"><img src="img/index/pic_03.png" alt="pic_03" width="696"></li>
+                    <li class="item"><img src="img/index/pic_01.png" title="pic_01" width="696"> </li>
+                    <li class="item"><img src="img/index/pic_02.png" title="pic_02" width="696"> </li>
+                    <li class="item"><img src="img/index/pic_03.png" title="pic_03" width="696"> </li>
                   </ul>
                 </div>
               </div>
@@ -135,7 +131,7 @@
               <!-- Number of slider -->
                 <div class="col col-xl-3 hidden">
                 <div class="slider-number-block">
-                  <div class="slider-number_01 block active">
+                  <div class="slider-number_01 block">
                     01
                   </div>
                   <div class="slider-number_02 block">
@@ -157,9 +153,9 @@
               <!-- Button: Book a table -->
 
               <div class="col col-xl-3 col-sm-12 col-12">
-                <div class="slider-button">
+                <div class="slider-button booktable">
                   <div class="button">
-                    <a href="#">BOOK A TABLE</a>
+                    <a href="/book">BOOK A TABLE</a>
                   </div>
                 </div>
               </div>
@@ -329,7 +325,7 @@
         </div>
 
       </div>
-    </div>
+    </div> 
   </section>
 
   <footer>

@@ -9,7 +9,12 @@
   position: relative
 
 #my-header-top
-  min-height: 170px
+  min-height: 160px
+
+  .firm
+    a
+      text-decoration: none
+      color: #fff
 
 .firm
   margin: 65px 0 0 -30px
@@ -79,6 +84,7 @@
 
 .my-header-main
   position: relative
+  width: 100%
 
   .slider
     width: 100%
@@ -91,12 +97,18 @@
       margin: auto auto
       opacity: 0
       transition: opacity 0.4s ease
+      -ms-touch-action:auto
+      -webkit-user-select:auto
+      -moz-user-select:auto
+      -ms-user-select:auto
+      touch-action:auto
+      user-select:auto
 
 
       .slider-items
         position: relative
         list-style-type: none
-        margin: 0
+        // margin: 0
         padding: 0
         font-size: 0
         margin-left: -1396px
@@ -113,10 +125,11 @@
             display: block
             margin: auto auto
             padding: 0
+            width: 100%
 
     .slider-pointer-left
       position: absolute
-      left: 0
+      left: 0px
       width: 70px
       height: 70px
       border:
@@ -125,6 +138,7 @@
       transform: rotate(135deg)
       top: 53%
       cursor: pointer
+      z-index: 100
 
     .slider-pointer-right
       position: absolute
@@ -190,11 +204,10 @@
 
 
   .slider-button
+    box-sizing: border-box
     position: relative
     bottom: 0px
     max-width: 220px
-
-
 
     .button
       position: absolute
@@ -202,7 +215,35 @@
       padding: 17px 45px
       right: -90px
       cursor: pointer
+      transition: .2s all ease-out
 
+      &:hover
+        border: 1px solid #485675
+        box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.1)
+        -webkit-box-shadow: 0 0 2px 2px rgba(255,255,255,0.1)
+        -moz-box-shadow: 0 0 2px 2px rgba(255,255,255,0.1)
       a
         text-decoration: none
         color: $pushCol
+
+  // MENU PAGE
+#menu-page, #book-page
+  #my-header
+    background-color: #ffffff
+    color: #151b28
+    #my-header-top
+      border-bottom: 1px solid #e6e6e6
+      .firm
+        a
+          color: #151b28
+    
+
+    .menu li a
+      color: #151b28
+
+    .mobileMenu-list
+      li
+        a
+          text-decoration: none
+          color: #151b28
+          transition: all .1s ease-in

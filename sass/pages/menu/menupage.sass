@@ -1,0 +1,93 @@
+@import "../../common/fonts.sass"
+@import "../../common/vars.sass"
+
+//Menu-page
+#menu-page, #book-page
+  #my-header
+    padding-bottom: 0
+    background-color: #ffffff
+    color: #151b28
+    #my-header-top
+      border-bottom: 1px solid #e6e6e6
+    
+
+    .menu li a
+      color: #151b28
+  a
+    text-decoration: none
+    &:hover
+      text-decoration: none
+
+  section.menu
+    text-align: center
+    padding-bottom: 40px
+    .perfection
+    //border: 1px solid $pushCol
+    color: black
+
+    .perfection-block
+      padding: 135px 0 120px 0
+      background: url("../../img/index/Gratia.png") no-repeat
+      background-position: 49% 57%
+      background-size: 570px
+
+      .perfection-block_name
+        font-size: 44px
+        margin-bottom: 10px
+
+      .perfection-block_tagline
+        color:#8b909d
+        font-family: $crim
+        font-weight: 100
+        font-size: 20px
+
+.menu-card
+  width: 95%
+  background: #fff
+  overflow: hidden
+  color: #000
+  position: relative
+  display: block
+  margin: 0 auto 50px auto
+  box-shadow: 0px 0px 183px 0px rgba(229, 230, 235, 1)
+  transition: 0.3s all ease-in
+  &:hover
+    box-shadow: 0px 0px 183px 0px rgba(229, 230, 235, 1), 0px 0px 33px 0px #969696
+
+  figure
+    position: relative
+    width: 100%
+    &::after
+      content: ""
+      width: 40px
+      height: 1px
+      background-color: #cecece
+      position: absolute
+      margin: 15px auto
+      right: 0
+      left: 0
+
+    figcaption
+      font-size: 20px
+      display: block
+      margin-top: 50px
+      font-family: $default-font
+      font-weight: bold
+    
+    .menu-card-img
+      img
+        width: 105%
+        margin-left: -3%
+  
+  .menu-card-text
+    display: block
+    padding: 40px 0px 50px 0
+    text-decoration: none
+    color: #8b909d
+    font-family: $crim
+    font-weight: 100
+    font-size: 20px
+    i::hover
+      text-decoration: none
+
+
